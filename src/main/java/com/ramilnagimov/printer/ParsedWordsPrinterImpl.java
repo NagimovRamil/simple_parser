@@ -1,10 +1,11 @@
-package com.ramilnagimov;
+package com.ramilnagimov.printer;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class ParsedWordsPrinter {
-    public void printParsedWords(String[] words) {
+public class ParsedWordsPrinterImpl implements ParsedWordsPrinter {
+    @Override
+    public void printWordsParsedFromURL(String[] words) {
         Map<String, Integer> map = new HashMap<>();
         for (String string : words) {
             if (!map.containsKey(string)) {

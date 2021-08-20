@@ -1,13 +1,16 @@
-package com.ramilnagimov;
+package com.ramilnagimov.parser;
 
+import org.apache.log4j.Logger;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class Parser {
+public class ParserImpl implements Parser {
+    private static final Logger log = Logger.getLogger(ParserImpl.class);
 
+    @Override
     public String[] parseURL(String url) {
         String text = null;
         try {
@@ -19,6 +22,7 @@ public class Parser {
         } catch (
                 IOException e) {
             e.printStackTrace();
+            log.error(e.getStackTrace());
         }
         ArrayList<String> listOfSeparators = new ArrayList<>();
         listOfSeparators.add(" ");
