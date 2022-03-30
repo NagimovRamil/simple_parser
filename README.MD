@@ -1,13 +1,9 @@
-Приложение, которое позволяет парсить произвольную HTML-страницу и выдает статистику по количеству уникальных слов.
+An application that allows you to parse an random HTML page and provides statistics on the number of unique words.
 
-1. В качестве входных данных приложение принимает строку с адресом
-web-страницы. 
-2. Приложение разбивает текст страницы на отдельные слова с помощью
-списка разделителей. 
-3. В качестве результата работы пользователь должен получить статистику по
-количеству уникальных слов в тексте. 
-4. При разработке использованы сторонние библиотеки.
-5. Приложение написано в соответствии с принципами ООП 
-6. Приложение написано на Java
-
-Дополнительно использован Apache Commons Validator, Log4j, тестирование с использованием JUnit Jupiter.
+The application takes as input a string containing the address of a web page.
+The application breaks the page text into individual words using a list of delimiters.
+As a result of the work, the user should receive statistics on the number of unique words in the text.
+Third-party libraries were used during development.
+The application is written in accordance with the principles of OOP
+The application is written in Java
+Additionally used Apache Commons Validator, Log4j, testing using JUnit Jupiter.
